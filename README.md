@@ -12,9 +12,11 @@ To provide positional information to the transformer, positional embeddings are 
 # Transformer Encoder
 The core component of the Vision Transformer model is the transformer encoder. It consists of multiple transformer layers stacked on top of each other. Each transformer layer contains a self-attention mechanism and feed-forward neural networks.
 
-# Self-Attention: Self-attention is the key mechanism that allows the model to capture global dependencies and attend to relevant patches in the image. It enables each patch embedding to attend to all other patches in the sequence, learning meaningful relationships among them. This attention mechanism helps the model understand the context of each patch within the entire image.
+# Self-Attention: 
+Self-attention is the key mechanism that allows the model to capture global dependencies and attend to relevant patches in the image. It enables each patch embedding to attend to all other patches in the sequence, learning meaningful relationships among them. This attention mechanism helps the model understand the context of each patch within the entire image.
 
-# Feed-Forward Neural Networks: After self-attention, the transformer encoder applies feed-forward neural networks to each patch's embeddings independently. This step allows the model to perform non-linear transformations and capture more complex patterns in the data.
+# Feed-Forward Neural Networks:
+After self-attention, the transformer encoder applies feed-forward neural networks to each patch's embeddings independently. This step allows the model to perform non-linear transformations and capture more complex patterns in the data.
 
 # Classification Head
 At the end of the transformer encoder, a classification head is attached to the final encoder layer. The classification head is a fully connected layer that maps the representations obtained from the transformer encoder to the number of classes in the dataset. During training, the model optimizes its parameters to minimize the cross-entropy loss between predicted class probabilities and ground-truth labels.
